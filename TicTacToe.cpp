@@ -15,10 +15,14 @@ void _getInput(char player, char Board[3][3]);
 //Checks if one of the players have won
 bool _checkForWins(char player, char Board[3][3]);
 
-int main();
+int Core();
 
 /// --- This is main(), It does exactly what main() should, if you don't know what main does, go take a look at "c++ 101" or "c++ for dummies" --- \\\ 
-int main(){
+int main(int argc, char *argv[]){ Core(); }
+
+
+int Core(){
+
 
     //Weather the player chose to restart
     char restart = '-';
@@ -97,7 +101,7 @@ int main(){
     cin >> restart;
     cout << "\n\n\n\n";
     if (restart == 'y'){
-        main();
+        Core();
     } 
 
     return 0;
