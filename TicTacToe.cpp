@@ -17,9 +17,8 @@ bool _checkForWins(char player, char Board[3][3]);
 
 int main();
 
-
 /// --- This is main(), It does exactly what main() should, if you don't know what main does, go take a look at "c++ 101" or "c++ for dummies" --- \\\ 
-int main() {
+int main(){
 
     //Weather the player chose to restart
     char restart = '-';
@@ -40,10 +39,7 @@ int main() {
     int chosenColumn = 0;
 
     //Holds values of every grid coordinate
-    char gridHolder[3][3] = 
-        {{'-', '-', '-'},
-         {'-', '-', '-'},
-         {'-', '-', '-'}};
+    char gridHolder[3][3] = {{'-', '-', '-'},{'-', '-', '-'},{'-', '-', '-'}};
 
     
 /*
@@ -104,7 +100,7 @@ int main() {
         main();
     } 
 
-
+    return 0;
 }
 
 
